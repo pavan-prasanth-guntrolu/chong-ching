@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "IBM Quantum",
+    "tier": "title",
+    "logo": "/sponsors/ibm-quantum.png",
+    "website": "https://quantum.ibm.com",
+    "description": "Leading the quantum revolution with accessible quantum computing systems and comprehensive quantum education resources."
+  },
+  {
+    "id": 2,
+    "name": "Microsoft Quantum",
+    "tier": "platinum",
+    "logo": "/sponsors/microsoft-quantum.png",
+    "website": "https://quantum.microsoft.com",
+    "description": "Advancing quantum computing through Azure Quantum cloud services and Q# programming language."
+  },
+  {
+    "id": 3,
+    "name": "Google Quantum AI",
+    "tier": "platinum",
+    "logo": "/sponsors/google-quantum.png",
+    "website": "https://quantumai.google",
+    "description": "Pushing the boundaries of quantum computing with breakthrough research and Cirq framework."
+  },
+  {
+    "id": 4,
+    "name": "Rigetti Computing",
+    "tier": "gold",
+    "logo": "/sponsors/rigetti.png",
+    "website": "https://rigetti.com",
+    "description": "Full-stack quantum computing company providing quantum cloud services and Forest SDK."
+  },
+  {
+    "id": 5,
+    "name": "IonQ",
+    "tier": "gold",
+    "logo": "/sponsors/ionq.png",
+    "website": "https://ionq.com",
+    "description": "Building the world's best quantum computers using trapped ion technology."
+  },
+  {
+    "id": 6,
+    "name": "Xanadu",
+    "tier": "silver",
+    "logo": "/sponsors/xanadu.png",
+    "website": "https://xanadu.ai",
+    "description": "Photonic quantum computing company developing PennyLane quantum machine learning framework."
+  },
+  {
+    "id": 7,
+    "name": "D-Wave Systems",
+    "tier": "silver",
+    "logo": "/sponsors/dwave.png",
+    "website": "https://dwavesys.com",
+    "description": "Pioneer in quantum annealing systems for solving optimization problems."
+  },
+  {
+    "id": 8,
+    "name": "Quantum Computing India",
+    "tier": "community",
+    "logo": "/sponsors/qci.png",
+    "website": "https://quantumcomputingindia.com",
+    "description": "Building India's quantum computing ecosystem through education and community initiatives."
+  },
+  {
+    "id": 9,
+    "name": "Quantum Computing India",
+    "tier": "community",
+    "logo": "/sponsors/qci.png",
+    "website": "https://quantumcomputingindia.com",
+    "description": "Building India's quantum computing ecosystem through education and community initiatives."
+  },
+
+  {
+    "id": 10,
+    "name": "Xanadu",
+    "tier": "silver",
+    "logo": "/sponsors/xanadu.png",
+    "website": "https://xanadu.ai",
+    "description": "Photonic quantum computing company developing PennyLane quantum machine learning framework."
+  },
+
+  {
+    "id": 11,
+    "name": "IonQ",
+    "tier": "gold",
+    "logo": "/sponsors/ionq.png",
+    "website": "https://ionq.com",
+    "description": "Building the world's best quantum computers using trapped ion technology."
+  }
+]

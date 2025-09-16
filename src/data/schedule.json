@@ -1,0 +1,174 @@
+[
+  {
+    "date": "2025-10-15",
+    "day": "Day 1",
+    "title": "Quantum Foundations",
+    "sessions": [
+      {
+        "id": 1,
+        "time": "9:00 AM - 9:30 AM",
+        "title": "Registration & Welcome Coffee",
+        "type": "registration",
+        "location": "Main Auditorium",
+        "description": "Check-in, networking, and quantum-themed refreshments"
+      },
+      {
+        "id": 2,
+        "time": "9:30 AM - 10:00 AM",
+        "title": "Opening Ceremony",
+        "type": "ceremony",
+        "speaker": "Dr. Rajesh Gupta",
+        "location": "Main Auditorium",
+        "description": "Welcome to Qiskit Fall Fest 2025 at IIIT Srikakulam"
+      },
+      {
+        "id": 3,
+        "time": "10:00 AM - 11:00 AM",
+        "title": "The Future of Quantum Error Correction",
+        "type": "keynote",
+        "speaker": "Dr. Sarah Quantum",
+        "location": "Main Auditorium",
+        "description": "Exploring the latest advances in quantum error correction"
+      },
+      {
+        "id": 4,
+        "time": "11:00 AM - 12:00 PM",
+        "title": "Building Your First Quantum Circuit",
+        "type": "workshop",
+        "speaker": "Maria Rodriguez",
+        "location": "Lab 101",
+        "description": "Hands-on introduction to quantum circuits with Qiskit"
+      },
+      {
+        "id": 5,
+        "time": "12:00 PM - 1:00 PM",
+        "title": "Lunch & Networking",
+        "type": "break",
+        "location": "Cafeteria",
+        "description": "Connect with fellow quantum enthusiasts"
+      },
+      {
+        "id": 6,
+        "time": "1:00 PM - 2:30 PM",
+        "title": "Quantum Algorithms Workshop",
+        "type": "workshop",
+        "speaker": "Dr. Priya Sharma",
+        "location": "Lab 102",
+        "description": "Deep dive into Grover's and Shor's algorithms"
+      },
+      {
+        "id": 7,
+        "time": "2:30 PM - 3:30 PM",
+        "title": "IBM Qiskit Textbook Walkthrough",
+        "type": "tutorial",
+        "speaker": "Team IBM",
+        "location": "Lab 103",
+        "description": "Guided exploration of Qiskit learning resources"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-16",
+    "day": "Day 2",
+    "title": "Quantum Applications",
+    "sessions": [
+      {
+        "id": 8,
+        "time": "9:00 AM - 9:30 AM",
+        "title": "Morning Coffee & Quantum Puzzles",
+        "type": "break",
+        "location": "Main Auditorium",
+        "description": "Start the day with quantum brain teasers"
+      },
+      {
+        "id": 9,
+        "time": "9:30 AM - 10:30 AM",
+        "title": "Quantum Advantage in Practice",
+        "type": "keynote",
+        "speaker": "Prof. Liu Wei",
+        "location": "Main Auditorium",
+        "description": "Real-world applications of quantum computing"
+      },
+      {
+        "id": 10,
+        "time": "10:30 AM - 12:00 PM",
+        "title": "Hackathon Team Formation",
+        "type": "hackathon",
+        "location": "Innovation Hub",
+        "description": "Form teams and choose your quantum challenge"
+      },
+      {
+        "id": 11,
+        "time": "12:00 PM - 1:00 PM",
+        "title": "Lunch Break",
+        "type": "break",
+        "location": "Cafeteria",
+        "description": "Fuel up for the hackathon"
+      },
+      {
+        "id": 12,
+        "time": "1:00 PM - 2:00 PM",
+        "title": "Hackathon Kickoff",
+        "type": "hackathon",
+        "location": "Innovation Hub",
+        "description": "Begin working on your quantum projects"
+      },
+      {
+        "id": 13,
+        "time": "2:00 PM - 3:00 PM",
+        "title": "Quantum Machine Learning with Qiskit",
+        "type": "workshop",
+        "speaker": "Prof. Alex Chen",
+        "location": "Lab 101",
+        "description": "Hands-on QML algorithms and applications"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-17",
+    "day": "Day 3",
+    "title": "Hackathon & Presentations",
+    "sessions": [
+      {
+        "id": 14,
+        "time": "9:00 AM - 12:00 PM",
+        "title": "Hackathon Development",
+        "type": "hackathon",
+        "location": "Innovation Hub",
+        "description": "Intensive coding and development phase"
+      },
+      {
+        "id": 15,
+        "time": "12:00 PM - 1:00 PM",
+        "title": "Lunch & Final Preparations",
+        "type": "break",
+        "location": "Cafeteria",
+        "description": "Last chance to polish your presentations"
+      },
+      {
+        "id": 16,
+        "time": "1:00 PM - 3:00 PM",
+        "title": "Team Presentations",
+        "type": "presentation",
+        "location": "Main Auditorium",
+        "description": "Showcase your quantum innovations"
+      },
+      {
+        "id": 17,
+        "time": "3:00 PM - 4:00 PM",
+        "title": "Judging & Awards Ceremony",
+        "type": "ceremony",
+        "location": "Main Auditorium",
+        "description": "Recognition of outstanding quantum projects"
+      },
+      {
+        "id": 18,
+        "time": "4:00 PM - 5:00 PM",
+        "title": "Closing Ceremony & Networking",
+        "type": "ceremony",
+        "location": "Main Auditorium",
+        "description": "Celebrate achievements and connect for future collaborations"
+      }
+    ]
+  }
+]
