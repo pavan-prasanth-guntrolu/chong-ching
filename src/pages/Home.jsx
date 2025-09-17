@@ -136,7 +136,7 @@ const Home = () => {
                 {stats.map((stat, index) => (
                   <motion.div
                     key={stat.label}
-                    className="text-center glass-card p-4 rounded-xl border border-white/10"
+                    className="text-center glass-card p-4 rounded-xl border border-white"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.2 }}
                   >
@@ -185,7 +185,14 @@ const Home = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl lg:text-4xl font-bold font-poppins mb-6">
-              About Qiskit Fall Fest
+              <img
+                src="../../Fall Fest Graphics/Emojis/Cat_01.png"
+                alt="Qiskit Logo"
+                className="inline-block h-8 w-auto ml-2"
+                width={60}
+                height={60}
+              />{" "}
+              About Qiskit Fall Fest{" "}
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Qiskit Fall Fest is a global student-run series of quantum

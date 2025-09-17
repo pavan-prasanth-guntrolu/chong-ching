@@ -9,6 +9,7 @@ import {
   Atom,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AddressMap } from "./AddressMap";
 
 const Footer = () => {
   const quickLinks = [
@@ -172,7 +173,7 @@ const Footer = () => {
             </motion.div>
 
             {/* Contact & Register */}
-            <motion.div variants={itemVariants}>
+            {/* <motion.div variants={itemVariants}>
               <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">
                 Get Involved
               </h4>
@@ -197,7 +198,9 @@ const Footer = () => {
                   <ExternalLink className="ml-1 h-3 w-3" />
                 </a>
               </div>
-            </motion.div>
+            </motion.div> */}
+
+            <AddressMap />
           </div>
 
           {/* Bottom Section */}
