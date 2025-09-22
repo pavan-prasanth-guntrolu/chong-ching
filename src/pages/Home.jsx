@@ -12,6 +12,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import LoadingSpinner from "@/components/LoadingSpinner";
+import Cat_01 from "../../Graphics/Emojis/Cat_01.png";
 
 // Lazy load the 3D component for better performance
 const Hero3D = lazy(() => import("@/components/Hero3D"));
@@ -124,10 +125,7 @@ const Home = () => {
                   <Button
                     variant="outline"
                     size="lg"
-
                     className="px-8 py-4 text-lg bg-highlight text-white font-semibold border-white/20 hover:bg-highlight-dark hover:text-primary "
-
-                    
                   >
                     View Schedule
                   </Button>
@@ -194,7 +192,7 @@ const Home = () => {
           >
             <h2 className="text-3xl lg:text-4xl font-bold font-poppins mb-6">
               <img
-                src="../../Graphics/Emojis/Cat_01.png"
+                src={Cat_01}
                 alt="Qiskit Logo"
                 className="inline-block h-8 w-auto ml-2"
                 width={60}
