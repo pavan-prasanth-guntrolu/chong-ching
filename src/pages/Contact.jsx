@@ -9,14 +9,14 @@ const Contact = () => {
       icon: Mail,
       title: "Email Us",
       description: "Get in touch with our organizing team",
-      contact: "contact@REPLACE_WITH_EMAIL",
+      contact: "",
       action: "mailto:contact@REPLACE_WITH_EMAIL",
     },
     {
       icon: Phone,
       title: "Call Us",
       description: "Speak directly with organizers",
-      contact: "+91 REPLACE_WITH_PHONE",
+      contact: "",
       action: "tel:+91REPLACE_WITH_PHONE",
     },
     {
@@ -195,7 +195,12 @@ const Contact = () => {
                   harassment is not tolerated. Report incidents to
                   contact@REPLACE_WITH_EMAIL.
                 </p>
-                <Button variant="outline">View Full Code of Conduct</Button>
+                <Button
+                  variant="outline"
+                  className="hover:bg-[#1e1e1e] hover:text-primary transition-colors glass-card border"
+                >
+                  View Full Code of Conduct
+                </Button>
               </CardContent>
             </Card>
           </div>

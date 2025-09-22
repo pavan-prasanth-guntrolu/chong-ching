@@ -41,7 +41,7 @@ const queryClient = new QueryClient({
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <ThemeProvider defaultTheme="system" storageKey="qiskit-fest-theme">
+    <ThemeProvider defaultTheme="dark" storageKey="qiskit-fest-theme">
       <TooltipProvider>
         <Toaster />
         <Sonner />

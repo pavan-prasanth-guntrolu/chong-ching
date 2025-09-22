@@ -25,7 +25,7 @@ import {
 const Hackathon = () => {
   const [selectedTrack, setSelectedTrack] = useState(null);
 
-  const tracks = [
+  let tracks = [
     {
       id: "algorithms",
       title: "Quantum Algorithms",
@@ -92,7 +92,9 @@ const Hackathon = () => {
     },
   ];
 
-  const timeline = [
+  tracks = [];
+
+  let timeline = [
     {
       time: "Day 1 - 10:30 AM",
       title: "Team Formation",
@@ -123,7 +125,9 @@ const Hackathon = () => {
     },
   ];
 
-  const prizes = [
+  timeline = [];
+
+  let prizes = [
     {
       position: "1st Place",
       prize: "₹25,000 + IBM Quantum Merchandise",
@@ -145,6 +149,8 @@ const Hackathon = () => {
       description: "Most promising newcomers to quantum computing",
     },
   ];
+
+  prizes = [];
 
   const rules = [
     "Teams must consist of 2-6 members from academic institutions",

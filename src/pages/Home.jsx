@@ -49,7 +49,7 @@ const Home = () => {
   ];
 
   const stats = [
-    { label: "Days of Learning", value: "3" },
+    { label: "Days of Learning", value: "7" },
     { label: "Expert Speakers", value: "8+" },
     { label: "Hands-on Workshops", value: "12" },
     { label: "Quantum Notebooks", value: "25+" },
@@ -80,28 +80,33 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               {/* Event Badge */}
-              <motion.div
+              {/* <motion.div
                 className="inline-flex items-center px-4 py-2 rounded-full glass-card border border-white/20 mb-6"
                 whileHover={{ scale: 1.05 }}
               >
                 <span className="text-sm font-medium text-primary">
                   Global Quantum Computing Event Series
                 </span>
-              </motion.div>
+              </motion.div> */}
 
               {/* Main Heading */}
-              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold font-poppins mb-6">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-poppins mb-6">
                 <span className="block text-foreground">
-                  Qiskit Fall Fest 2025
+                  <span className="text-custom">Qiskit</span> Fall Fest 2025
                 </span>
                 <span className="block text-gradient mt-2">
-                  RGUKT Srikakulam
+                  RGUKT Srikakulam, India
+                </span>
+              </h1>
+              <h1 className="text-1xl sm:text-2xl lg:text-4xl font-bold font-poppins mb-6">
+                <span className="block text-foreground">
+                  21<sup>st</sup> - 27<sup>th</sup> October 2025
                 </span>
               </h1>
 
               {/* Tagline */}
               <p className="text-xl sm:text-2xl text-muted-foreground mb-8 leading-relaxed">
-                Celebrating 100Year's of Quantum Technology.
+                {/* Celebrating 100Year's of Quantum Technology. */}
               </p>
 
               {/* CTA Buttons */}
@@ -119,7 +124,8 @@ const Home = () => {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="px-8 py-4 text-lg font-semibold glass-card border-white/20"
+                    // className="px-8 py-4 text-lg bg-foreground  font-semibold glass-card border-white/20"
+                    className="px-8 py-4 text-lg bg-foreground/70 text-black  font-semibold border-white/20"
                   >
                     View Schedule
                   </Button>
@@ -186,7 +192,7 @@ const Home = () => {
           >
             <h2 className="text-3xl lg:text-4xl font-bold font-poppins mb-6">
               <img
-                src="../../Fall Fest Graphics/Emojis/Cat_01.png"
+                src="../../Graphics/Emojis/Cat_01.png"
                 alt="Qiskit Logo"
                 className="inline-block h-8 w-auto ml-2"
                 width={60}
@@ -196,9 +202,9 @@ const Home = () => {
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Qiskit Fall Fest is a global student-run series of quantum
-              computing events supported by IBM Quantum. IIIT Srikakulam's
-              edition brings hands-on workshops, guided Jupyter notebooks, and a
-              campus hackathon to help students build practical Qiskit skills.
+              computing events supported by IBM Quantum. IIIT-AP's edition
+              brings hands-on workshops, guided Jupyter notebooks, and a campus
+              hackathon to help students build practical Qiskit skills.
             </p>
           </motion.div>
 
@@ -284,7 +290,7 @@ const Home = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="px-8 py-4 text-lg font-semibold"
+                  className="px-8 py-4 text-lg font-semibold hover:bg-[#1e1e1e] hover:text-primary transition-colors glass-card border"
                 >
                   Explore Qiskit Textbook
                   <ExternalLink className="ml-2 h-4 w-4" />

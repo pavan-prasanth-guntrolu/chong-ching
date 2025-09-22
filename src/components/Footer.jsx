@@ -29,25 +29,25 @@ const Footer = () => {
   const socialLinks = [
     {
       name: "GitHub",
-      href: "REPLACE_WITH_GITHUB_REPO",
+      href: "",
       icon: Github,
       label: "View source code on GitHub",
     },
     {
       name: "Twitter",
-      href: "REPLACE_WITH_TWITTER_URL",
+      href: "",
       icon: Twitter,
       label: "Follow us on Twitter",
     },
     {
       name: "LinkedIn",
-      href: "REPLACE_WITH_LINKEDIN_URL",
+      href: "",
       icon: Linkedin,
       label: "Connect on LinkedIn",
     },
     {
       name: "Email",
-      href: "mailto:contact@REPLACE_WITH_EMAIL",
+      href: "mailto:",
       icon: Mail,
       label: "Send us an email",
     },
@@ -204,7 +204,7 @@ const Footer = () => {
           </div>
 
           {/* Bottom Section */}
-          <motion.div
+          {/* <motion.div
             variants={itemVariants}
             className="mt-12 pt-8 border-t border-border"
           >
@@ -233,7 +233,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </footer>

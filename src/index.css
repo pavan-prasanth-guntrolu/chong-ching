@@ -183,6 +183,28 @@
     @apply bg-clip-text text-foreground;
     /* background: var(--gradient-quantum); */
   }
+
+  .text-custom {
+    /* background: linear-gradient(90deg, #f107a3, #f107a3); */
+    background: linear-gradient(90deg, #7b2ff7, #f107a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: #fff;
+    -webkit-text-stroke: 1px #fff;
+  }
+  .text-border {
+    -webkit-text-stroke: 1px #f107a3;
+    color: transparent;
+    font-weight: 800;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+  }
+
+  .text-purple {
+    color: hsl(259 94% 51%);
+  }
 }
 
 @layer base {

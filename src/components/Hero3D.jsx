@@ -295,7 +295,7 @@ const Hero3D = () => {
         gl={{ antialias: true, alpha: true }}
         dpr={[1, 2]}
       >
-        <Suspense fallback={<Loader />}>
+        <Suspense>
           <Scene />
         </Suspense>
       </Canvas>

@@ -12,6 +12,8 @@ import { Twitter, Linkedin, Calendar, Clock } from "lucide-react";
 import speakersData from "@/data/speakers.json";
 
 const Speakers = () => {
+  let filteredSpeakers = speakersData;
+  filteredSpeakers = [];
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -35,11 +37,11 @@ const Speakers = () => {
           </motion.div>
         </div>
       </section>
-
+      <h1 className="text-bold text-center text-4xl mt-10">Coming Soon</h1>
       <section className="py-20 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {speakersData.map((speaker, index) => (
+            {filteredSpeakers.map((speaker, index) => (
               <motion.div
                 key={speaker.id}
                 initial={{ opacity: 0, y: 20 }}

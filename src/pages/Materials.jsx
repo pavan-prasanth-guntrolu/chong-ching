@@ -9,7 +9,7 @@ const Materials = () => {
       title: "Event Repository",
       description: "Complete codebase and materials",
       icon: Github,
-      link: "REPLACE_WITH_GITHUB_REPO",
+      link: "#",
     },
     {
       title: "Presentation Slides",

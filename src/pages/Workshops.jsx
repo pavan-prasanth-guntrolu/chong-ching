@@ -44,7 +44,7 @@ const Workshops = () => {
     { value: "protocols", label: "Protocols" },
   ];
 
-  const filteredNotebooks = useMemo(() => {
+  let filteredNotebooks = useMemo(() => {
     return notebooksData.filter((notebook) => {
       if (
         selectedDifficulty !== "all" &&
@@ -56,6 +56,8 @@ const Workshops = () => {
       return true;
     });
   }, [selectedDifficulty, selectedCategory]);
+
+  filteredNotebooks = [];
 
   const getDifficultyColor = (difficulty) => {
     const diffConfig = difficulties.find((d) => d.value === difficulty);

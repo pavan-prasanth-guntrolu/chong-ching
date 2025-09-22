@@ -39,7 +39,7 @@ const Schedule = () => {
     { value: "presentation", label: "Presentations", color: "default" },
   ];
 
-  const filteredSchedule = useMemo(() => {
+  let filteredSchedule = useMemo(() => {
     return scheduleData
       .filter((day) => {
         if (selectedDay !== "all" && day.date !== selectedDay) return false;
@@ -58,6 +58,8 @@ const Schedule = () => {
             : day.sessions.filter((session) => session.type === selectedType),
       }));
   }, [selectedDay, selectedType]);
+
+  filteredSchedule = [];
 
   const generateICS = (session, date) => {
     const formatDate = (dateStr, timeStr) => {
@@ -192,6 +194,7 @@ END:VCALENDAR`;
       </section>
 
       {/* Schedule Content */}
+      <h1 className="text-center text-3xl font-bold m-10">Coming Soon</h1>
       <section className="py-20 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-12">
@@ -345,9 +348,12 @@ END:VCALENDAR`;
                     href="https://calendar.google.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center"
+                    className="inline-flex items-center "
                   >
-                    <Button variant="outline">
+                    <Button
+                      variant="outline "
+                      className="hover:bg-[#1e1e1e] hover:text-primary transition-colors glass-card border"
+                    >
                       Subscribe to Updates
                       <ExternalLink className="ml-2 h-4 w-4" />
                     </Button>
