@@ -115,7 +115,7 @@ const Home = () => {
                 <Link to="/register">
                   <Button
                     size="lg"
-                    className=" text-primary-foreground px-8 py-4 text-lg font-semibold"
+                    className=" text-primary-foreground px-8 py-4 text-lg font-semibold rounded-lg"
                   >
                     Register Now
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -125,7 +125,7 @@ const Home = () => {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="px-8 py-4 text-lg bg-highlight text-white font-semibold border-white/20 hover:bg-highlight-dark hover:text-primary "
+                    className="px-8 py-4 text-lg bg-highlight text-white font-semibold border-white/20 hover:bg-highlight-dark hover:text-primary rounded-lg"
                   >
                     View Schedule
                   </Button>
@@ -275,7 +275,7 @@ const Home = () => {
               <Link to="/register">
                 <Button
                   size="lg"
-                  className=" text-primary-foreground px-8 py-4 text-lg font-semibold"
+                  className=" text-primary-foreground px-8 py-4 text-lg font-semibold rounded-lg"
                 >
                   Secure Your Spot
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -290,7 +290,7 @@ const Home = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="px-8 py-4 text-lg font-semibold hover:bg-[#1e1e1e] hover:text-primary transition-colors glass-card border"
+                  className="px-8 py-4 text-lg font-semibold hover:bg-[#1e1e1e] hover:text-primary transition-colors glass-card border rounded-lg"
                 >
                   Explore Qiskit Textbook
                   <ExternalLink className="ml-2 h-4 w-4" />
