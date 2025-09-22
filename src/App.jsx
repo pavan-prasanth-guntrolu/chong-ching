@@ -1,11 +1,11 @@
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, useState, useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion, useScroll } from "framer-motion";
 import { AuthProvider } from "@/components/AuthProvider";
 
 // Core components
@@ -39,51 +39,124 @@ const queryClient = new QueryClient({
   },
 });
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <ThemeProvider defaultTheme="dark" storageKey="qiskit-fest-theme">
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <AuthProvider>
-            <div className="min-h-screen flex flex-col">
-              <Header />
-              <main className="flex-1">
-                <AnimatePresence mode="wait">
-                  <Suspense fallback={<LoadingSpinner />}>
-                    <Routes>
-                      <Route path="/" element={<Home />} />
-                      <Route path="/about" element={<About />} />
-                      <Route path="/register" element={<Register />} />
-                      <Route path="/schedule" element={<Schedule />} />
-                      <Route path="/workshops" element={<Workshops />} />
-                      <Route path="/speakers" element={<Speakers />} />
-                      <Route path="/hackathon" element={<Hackathon />} />
-                      <Route path="/materials" element={<Materials />} />
-                      <Route path="/sponsors" element={<Sponsors />} />
-                      <Route path="/organizers" element={<Organizers />} />
-                      <Route
-                        path="/code-of-conduct"
-                        element={<CodeOfConduct />}
+const App = () => {
+  const [showScroll, setShowScroll] = useState(false);
+  const { scrollYProgress } = useScroll();
+
+  const checkScrollTop = () => {
+    if (window.scrollY > 200) {
+      setShowScroll(true);
+    } else {
+      setShowScroll(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", checkScrollTop);
+    return () => {
+      window.removeEventListener("scroll", checkScrollTop);
+    };
+  }, []);
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider defaultTheme="dark" storageKey="qiskit-fest-theme">
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <AuthProvider>
+              <div className="min-h-screen flex flex-col">
+                <Header />
+                <main className="flex-1">
+                  <AnimatePresence mode="wait">
+                    <Suspense fallback={<LoadingSpinner />}>
+                      <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/register" element={<Register />} />
+                        <Route path="/schedule" element={<Schedule />} />
+                        <Route path="/workshops" element={<Workshops />} />
+                        <Route path="/speakers" element={<Speakers />} />
+                        <Route path="/hackathon" element={<Hackathon />} />
+                        <Route path="/materials" element={<Materials />} />
+                        <Route path="/sponsors" element={<Sponsors />} />
+                        <Route path="/organizers" element={<Organizers />} />
+                        <Route
+                          path="/code-of-conduct"
+                          element={<CodeOfConduct />}
+                        />
+                        <Route path="/faq" element={<FAQ />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route
+                          path="/event/:eventId"
+                          element={<EventDetail />}
+                        />
+                        <Route path="/login" element={<Login />} />
+                        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                        <Route path="*" element={<NotFound />} />
+                      </Routes>
+                    </Suspense>
+                  </AnimatePresence>
+                </main>
+                <Footer />
+                {showScroll && (
+                  <div className="fixed bottom-4 right-4 w-16 h-16">
+                    <svg className="w-full h-full" viewBox="0 0 100 100">
+                      {/* Background circle */}
+                      <circle
+                        cx="50"
+                        cy="50"
+                        r="45"
+                        className="stroke-current text-gray-200 dark:text-gray-700"
+                        strokeWidth="3"
+                        fill="transparent"
                       />
-                      <Route path="/faq" element={<FAQ />} />
-                      <Route path="/contact" element={<Contact />} />
-                      <Route path="/event/:eventId" element={<EventDetail />} />
-                      <Route path="/login" element={<Login />} />
-                      {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-                      <Route path="*" element={<NotFound />} />
-                    </Routes>
-                  </Suspense>
-                </AnimatePresence>
-              </main>
-              <Footer />
-            </div>
-          </AuthProvider>
-        </BrowserRouter>
-      </TooltipProvider>
-    </ThemeProvider>
-  </QueryClientProvider>
-);
+                      {/* Progress circle */}
+                      <motion.circle
+                        cx="50"
+                        cy="50"
+                        r="45"
+                        className="stroke-current text-primary"
+                        strokeWidth="3"
+                        fill="transparent"
+                        strokeLinecap="round"
+                        style={{ pathLength: scrollYProgress }}
+                        transform="rotate(-90 50 50)"
+                      />
+                    </svg>
+                    <button
+                      onClick={scrollToTop}
+                      className="absolute inset-0 m-auto w-12 h-12 bg-primary text-white rounded-full shadow-lg hover:bg-primary-dark flex items-center justify-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
+                        className="w-6 h-6"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M12 19.5V4.5m7.5 7.5L12 4.5 4.5 12"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                )}
+              </div>
+            </AuthProvider>
+          </BrowserRouter>
+        </TooltipProvider>
+      </ThemeProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
