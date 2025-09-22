@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -9,8 +9,10 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDesktopDropdownOpen, setIsDesktopDropdownOpen] = useState(false);
   const location = useLocation();
   const { user, signOut } = useAuth();
+  const dropdownRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +22,19 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDesktopDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [dropdownRef]);
 
   const navigation = [
     { name: "Home", href: "/" },
@@ -64,21 +79,20 @@ const Header = () => {
           <nav className="hidden lg:flex items-center space-x-8">
             {navigation.map((item) =>
               item.dropdown ? (
-                <div
-                  key={item.name}
-                  className="relative group"
-                  onMouseEnter={() => setIsDropdownOpen(true)}
-                  onMouseLeave={() => setIsDropdownOpen(false)}
-                >
-                  <button className="text-sm font-medium hover:text-primary focus:outline-none">
+                <div key={item.name} className="relative" ref={dropdownRef}>
+                  <button
+                    onClick={() => setIsDesktopDropdownOpen((prev) => !prev)}
+                    className="text-sm font-medium hover:text-primary focus:outline-none"
+                  >
                     {item.name}
                   </button>
-                  {isDropdownOpen && (
+                  {isDesktopDropdownOpen && (
                     <div className="absolute left-0 mt-2 bg-background border border-white/10 rounded-lg shadow-lg">
                       {item.dropdown.map((subItem) => (
                         <Link
                           key={subItem.name}
                           to={subItem.href}
+                          onClick={() => setIsDesktopDropdownOpen(false)}
                           className="block px-4 py-2 text-sm text-muted-foreground hover:bg-primary/10 hover:text-primary"
                         >
                           {subItem.name}
