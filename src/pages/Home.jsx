@@ -125,7 +125,7 @@ const Home = () => {
                     variant="outline"
                     size="lg"
                     // className="px-8 py-4 text-lg bg-foreground  font-semibold glass-card border-white/20"
-                    className="px-8 py-4 text-lg bg-foreground/70 text-black  font-semibold border-white/20"
+                    className="px-8 py-4 text-lg font-semibold hover:bg-[#1e1e1e] hover:text-primary transition-colors glass-card border"
                   >
                     View Schedule
                   </Button>
