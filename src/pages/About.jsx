@@ -7,42 +7,48 @@ const About = () => {
     {
       icon: Globe,
       title: "Global Initiative",
-      description: "Part of the worldwide Qiskit Fall Fest series supported by IBM Quantum, connecting students across continents."
+      description:
+        "Part of the worldwide Qiskit Fall Fest series supported by IBM Quantum, connecting students across continents.",
     },
     {
       icon: Users,
       title: "Student-Led",
-      description: "Organized by passionate students at IIIT Srikakulam who are enthusiastic about quantum computing."
+      description:
+        "Organized by passionate students at Rgukt Srikakulam who are enthusiastic about quantum computing.",
     },
     {
       icon: BookOpen,
       title: "Practical Learning",
-      description: "Hands-on workshops and guided Jupyter notebooks designed for real-world quantum programming skills."
+      description:
+        "Hands-on workshops and guided Jupyter notebooks designed for real-world quantum programming skills.",
     },
     {
       icon: Trophy,
       title: "Campus Hackathon",
-      description: "Build innovative quantum applications and compete with fellow students for exciting prizes."
+      description:
+        "Build innovative quantum applications and compete with fellow students for exciting prizes.",
     },
     {
       icon: Atom,
       title: "Expert Mentorship",
-      description: "Learn from leading quantum researchers and industry professionals from IBM and other organizations."
+      description:
+        "Learn from leading quantum researchers and industry professionals from IBM and other organizations.",
     },
     {
       icon: Zap,
       title: "Future-Ready Skills",
-      description: "Gain expertise in quantum computing technologies that will shape the future of computation."
-    }
+      description:
+        "Gain expertise in quantum computing technologies that will shape the future of computation.",
+    },
   ];
 
   const objectives = [
     "Introduce students to quantum computing concepts and Qiskit framework",
     "Provide hands-on experience with quantum algorithms and applications",
     "Foster collaboration and innovation through hackathon challenges",
-    "Build a strong quantum computing community at IIIT Srikakulam",
+    "Build a strong quantum computing community at Rgukt Srikakulam",
     "Connect students with quantum computing professionals and researchers",
-    "Prepare students for careers in quantum technology and research"
+    "Prepare students for careers in quantum technology and research",
   ];
 
   return (
@@ -66,8 +72,8 @@ const About = () => {
               About <span className="text-gradient">Qiskit Fall Fest</span>
             </h1>
             <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed">
-              Empowering the next generation of quantum computing innovators through 
-              hands-on learning and collaborative exploration.
+              Empowering the next generation of quantum computing innovators
+              through hands-on learning and collaborative exploration.
             </p>
           </motion.div>
         </div>
@@ -90,19 +96,25 @@ const About = () => {
               </h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Qiskit Fall Fest is a global student-run series of quantum computing events supported by IBM Quantum. 
-                  IIIT Srikakulam's edition brings hands-on workshops, guided Jupyter notebooks, and a campus hackathon 
-                  to help students build practical Qiskit skills.
+                  Qiskit Fall Fest is a global student-run series of quantum
+                  computing events supported by IBM Quantum. Rgukt Srikakulam
+                  edition brings hands-on workshops, guided Jupyter notebooks,
+                  and a campus hackathon to help students build practical Qiskit
+                  skills.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Our three-day event is designed to take participants on a comprehensive journey through the fascinating 
-                  world of quantum computing, from foundational concepts to advanced applications. Whether you're a complete 
-                  beginner or have some experience with quantum computing, this festival offers something valuable for everyone.
+                  Our seven-day event is designed to take participants on a
+                  comprehensive journey through the fascinating world of quantum
+                  technology, from foundational concepts to advanced
+                  applications. Whether you're a complete beginner or have some
+                  experience with quantum technology, this festival offers
+                  something valuable for everyone.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  The event combines theoretical learning with practical implementation, ensuring participants not only 
-                  understand quantum computing concepts but also gain hands-on experience building quantum applications 
-                  using IBM's Qiskit framework.
+                  The event combines theoretical learning with practical
+                  implementation, ensuring participants not only understand
+                  quantum technology concepts but also gain hands-on experience
+                  building quantum applications using IBM's Qiskit framework.
                 </p>
               </div>
             </div>
@@ -210,14 +222,16 @@ const About = () => {
                 Powered by IBM Quantum
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                This event is part of the global Qiskit Fall Fest series, officially supported by IBM Quantum. 
-                Participants will have access to IBM's quantum computers, educational resources, and expert guidance 
-                from the Qiskit community.
+                This event is part of the global Qiskit Fall Fest series,
+                officially supported by IBM Quantum. Participants will have
+                access to IBM's quantum computers, educational resources, and
+                expert guidance from the Qiskit community.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                IBM Qiskit is the world's most popular quantum computing framework, used by researchers, students, 
-                and professionals worldwide. Through this partnership, we bring world-class quantum education 
-                directly to IIIT Srikakulam.
+                IBM Qiskit is the world's most popular quantum computing
+                framework, used by researchers, students, and professionals
+                worldwide. Through this partnership, we bring world-class
+                quantum education directly to Rgukt Srikakulam.
               </p>
             </div>
           </motion.div>
