@@ -1,50 +1,82 @@
 [
   {
     "id": 1,
-    "name": "Dr. Sarah Quantum",
+    "name": "Industry Expert",
     "title": "Senior Quantum Researcher",
     "company": "IBM Quantum",
-    "bio": "Dr. Sarah Quantum is a leading researcher in quantum computing with over 10 years of experience in quantum algorithms and error correction. She has contributed to numerous Qiskit improvements and published 50+ papers on quantum computing.",
-    "image": "/speakers/sarah-quantum.jpg",
-    "twitter": "@sarahquantum",
-    "linkedin": "sarahquantum",
+    "bio": "Leading researcher in quantum computing with expertise in quantum algorithms, error correction, and practical implementations on real quantum devices. Has contributed to several major Qiskit developments and guided multiple industry projects.",
+    "image": "/speakers/speaker1.jpg",
+    "twitter": "@quantumexpert1",
+    "linkedin": "quantumexpert1",
     "talk": {
-      "title": "The Future of Quantum Error Correction",
-      "abstract": "Exploring the latest advances in quantum error correction and its implications for near-term quantum devices.",
+      "title": "Advances in Quantum Error Correction",
+      "abstract": "Deep dive into the latest techniques in quantum error correction and their impact on practical quantum computing applications.",
       "time": "10:00 AM",
       "date": "2025-10-15"
     }
   },
   {
     "id": 2,
-    "name": "Prof. Alex Chen",
+    "name": "Academician",
     "title": "Professor of Computer Science",
     "company": "MIT",
-    "bio": "Prof. Chen specializes in quantum algorithms and their applications to machine learning. He's the author of 'Quantum Computing: A Practical Approach' and leads the Quantum ML lab at MIT.",
-    "image": "/speakers/alex-chen.jpg",
-    "twitter": "@alexchenquantum",
-    "linkedin": "alexchen",
+    "bio": "Specializes in quantum algorithms and machine learning applications. Leads a quantum computing research lab and has published extensively in top-tier journals.",
+    "image": "/speakers/speaker2.jpg",
+    "twitter": "@quantumacad",
+    "linkedin": "quantumacad",
     "talk": {
-      "title": "Quantum Machine Learning with Qiskit",
-      "abstract": "Hands-on exploration of quantum machine learning algorithms using Qiskit's ML framework.",
+      "title": "Quantum Machine Learning Techniques",
+      "abstract": "Exploring practical implementations of quantum machine learning using modern frameworks like Qiskit.",
+      "time": "11:30 AM",
+      "date": "2025-10-15"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Industry Speaker",
+    "title": "Quantum Software Engineer",
+    "company": "Google Quantum",
+    "bio": "Experienced quantum software engineer working on both Cirq and Qiskit. Focuses on building educational resources and mentoring young quantum developers.",
+    "image": "/speakers/speaker3.jpg",
+    "twitter": "@quantumdev",
+    "linkedin": "quantumdev",
+    "talk": {
+      "title": "Introduction to Quantum Circuits",
+      "abstract": "Hands-on session to build and simulate quantum circuits using Qiskit, suitable for beginners.",
       "time": "2:00 PM",
       "date": "2025-10-16"
     }
   },
   {
-    "id": 3,
-    "name": "Maria Rodriguez",
-    "title": "Quantum Software Engineer",
-    "company": "Google Quantum",
-    "bio": "Maria is a passionate quantum software engineer who has worked on both Cirq and Qiskit. She advocates for quantum education and has mentored over 100 students in quantum computing.",
-    "image": "/speakers/maria-rodriguez.jpg",
-    "twitter": "@mariaquantum",
-    "linkedin": "mariarodriguez",
+    "id": 4,
+    "name": "Industry Expert",
+    "title": "Lead Quantum Architect",
+    "company": "Microsoft Quantum",
+    "bio": "Expert in quantum system architecture and scalable quantum computing solutions. Involved in designing quantum processors and software stacks for enterprise applications.",
+    "image": "/speakers/speaker4.jpg",
+    "twitter": "@quantumarch",
+    "linkedin": "quantumarch",
     "talk": {
-      "title": "Building Your First Quantum Circuit",
-      "abstract": "A beginner-friendly introduction to quantum circuits and programming with Qiskit.",
-      "time": "11:00 AM",
-      "date": "2025-10-15"
+      "title": "Designing Scalable Quantum Systems",
+      "abstract": "Discussing architectural principles for building large-scale, fault-tolerant quantum systems.",
+      "time": "3:30 PM",
+      "date": "2025-10-16"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Academician",
+    "title": "Research Scientist",
+    "company": "Caltech Quantum Lab",
+    "bio": "Focuses on experimental quantum computing and quantum materials research. Has extensive experience bridging theoretical concepts with lab implementations.",
+    "image": "/speakers/speaker5.jpg",
+    "twitter": "@quantumresearch",
+    "linkedin": "quantumresearch",
+    "talk": {
+      "title": "Quantum Experiments and Lab Insights",
+      "abstract": "Overview of key experimental techniques in quantum computing and lessons learned from real-world lab experiments.",
+      "time": "4:30 PM",
+      "date": "2025-10-17"
     }
   }
 ]

@@ -8,12 +8,12 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Twitter, Linkedin, Calendar, Clock } from "lucide-react";
+import { Twitter, Linkedin, Calendar, Clock, Instagram } from "lucide-react";
 import speakersData from "@/data/speakers.json";
 
 const Speakers = () => {
   let filteredSpeakers = speakersData;
-  filteredSpeakers = [];
+  // filteredSpeakers = [];
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -37,7 +37,7 @@ const Speakers = () => {
           </motion.div>
         </div>
       </section>
-      <h1 className="text-bold text-center text-4xl mt-10">Coming Soon</h1>
+      {/* <h1 className="text-bold text-center text-4xl mt-10">Coming Soon</h1> */}
       <section className="py-20 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
@@ -72,23 +72,47 @@ const Speakers = () => {
                         <p className="text-primary font-medium mb-1">
                           {speaker.title}
                         </p>
-                        <p className="text-muted-foreground text-sm mb-4">
+                        <p className="text-muted-foreground text-sm mb-2">
                           {speaker.company}
                         </p>
+                        <div className="flex gap-3 mb-4">
+                          {speaker.twitter && (
+                            <a
+                              href={`https://twitter.com/${speaker.twitter.replace(
+                                "@",
+                                ""
+                              )}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="w-8 h-8 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 hover:bg-blue-200 transition"
+                            >
+                              <Twitter className="w-4 h-4" />
+                            </a>
+                          )}
+                          {speaker.linkedin && (
+                            <a
+                              href={`https://linkedin.com/in/${speaker.linkedin}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="w-8 h-8 flex items-center justify-center rounded-full bg-blue-100 text-blue-700 hover:bg-blue-200 transition"
+                            >
+                              <Linkedin className="w-4 h-4" />
+                            </a>
+                          )}
+                          {speaker.instagram && (
+                            <a
+                              href={`https://instagram.com/${speaker.instagram}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="w-8 h-8 flex items-center justify-center rounded-full bg-pink-100 text-pink-500 hover:bg-pink-200 transition"
+                            >
+                              <Instagram className="w-4 h-4" />
+                            </a>
+                          )}
+                        </div>
                         <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">
                           {speaker.bio}
                         </p>
-                        {speaker.talk && (
-                          <div className="mt-4 pt-4 border-t border-border">
-                            <p className="font-medium text-sm">
-                              {speaker.talk.title}
-                            </p>
-                            <div className="flex items-center text-xs text-muted-foreground mt-1">
-                              <Clock className="w-3 h-3 mr-1" />
-                              {speaker.talk.time}
-                            </div>
-                          </div>
-                        )}
                       </CardContent>
                     </Card>
                   </DialogTrigger>
@@ -116,6 +140,7 @@ const Speakers = () => {
                             {speaker.company}
                           </p>
                           <div className="flex items-center space-x-4 mt-2">
+                            {/* Social Links */}
                             {speaker.twitter && (
                               <a
                                 href={`https://twitter.com/${speaker.twitter.replace(
@@ -124,7 +149,7 @@ const Speakers = () => {
                                 )}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-muted-foreground hover:text-primary transition-colors"
+                                className="w-8 h-8 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 hover:bg-blue-200 transition"
                               >
                                 <Twitter className="w-4 h-4" />
                               </a>
@@ -134,9 +159,19 @@ const Speakers = () => {
                                 href={`https://linkedin.com/in/${speaker.linkedin}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-muted-foreground hover:text-primary transition-colors"
+                                className="w-8 h-8 flex items-center justify-center rounded-full bg-blue-100 text-blue-700 hover:bg-blue-200 transition"
                               >
                                 <Linkedin className="w-4 h-4" />
+                              </a>
+                            )}
+                            {speaker.instagram && (
+                              <a
+                                href={`https://instagram.com/${speaker.instagram}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-8 h-8 flex items-center justify-center rounded-full bg-pink-100 text-pink-500 hover:bg-pink-200 transition"
+                              >
+                                <Instagram className="w-4 h-4" />
                               </a>
                             )}
                           </div>
