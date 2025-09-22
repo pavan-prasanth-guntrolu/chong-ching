@@ -59,7 +59,7 @@ const Schedule = () => {
       }));
   }, [selectedDay, selectedType]);
 
-  filteredSchedule = [];
+  // filteredSchedule = [];
 
   const generateICS = (session, date) => {
     const formatDate = (dateStr, timeStr) => {
