@@ -133,9 +133,9 @@ const Header = () => {
               </button>
             ) : (
               <Link to="/login">
-                <button className="px-4 py-2 bg-muted text-muted-foreground rounded-lg hover:bg-muted/90">
+                {/* <button className="px-4 py-2 bg-muted text-muted-foreground rounded-lg hover:bg-muted/90">
                   Sign In
-                </button>
+                </button> */}
               </Link>
             )}
           </div>

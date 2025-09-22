@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AddressMap } from "./AddressMap";
+import hundredYears from "../../Graphics/Emojis/Theme.png";
 
 const Footer = () => {
   const quickLinks = [
@@ -90,14 +91,16 @@ const Footer = () => {
                   className="p-2 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <Atom className="h-6 w-6 text-primary animate-pulse-glow" />
+                  {/* <Atom className="h-6 w-6 text-primary animate-pulse-glow" />
+                   */}
+                  <img src={hundredYears} width={70} />
                 </motion.div>
                 <div>
                   <h3 className="text-lg font-bold font-poppins text-foreground">
                     Qiskit Fall Fest 2025
                   </h3>
                   <p className="text-sm text-muted-foreground -mt-1">
-                    IIIT Srikakulam
+                    Rgukt Srikakulam
                   </p>
                 </div>
               </Link>

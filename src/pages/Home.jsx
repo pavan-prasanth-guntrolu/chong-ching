@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import Cat_01 from "../../Graphics/Emojis/Cat_01.png";
+import centuryImg from "../../Graphics/Emojis/Text_Theme_01.png";
 
 // Lazy load the 3D component for better performance
 const Hero3D = lazy(() => import("@/components/Hero3D"));
@@ -53,7 +54,7 @@ const Home = () => {
     { label: "Days of Learning", value: "7" },
     { label: "Expert Speakers", value: "8+" },
     { label: "Hands-on Workshops", value: "12" },
-    { label: "Quantum Notebooks", value: "25+" },
+    { label: "Quantum Notebooks", value: "6+" },
   ];
 
   return (
@@ -90,6 +91,11 @@ const Home = () => {
                 </span>
               </motion.div> */}
 
+              <img
+                src={centuryImg}
+                className="h-9 text-center ml-auto mr-auto"
+              />
+              <br />
               {/* Main Heading */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-poppins mb-6">
                 <span className="block text-foreground">
@@ -99,7 +105,7 @@ const Home = () => {
                   RGUKT Srikakulam, India
                 </span>
               </h1>
-              <h1 className="text-1xl sm:text-2xl lg:text-4xl font-bold font-poppins mb-6">
+              <h1 className="text-1xl sm:text-2xl lg:text-3xl font-bold font-poppins mb-6">
                 <span className="block text-foreground">
                   21<sup>st</sup> - 27<sup>th</sup> October 2025
                 </span>
